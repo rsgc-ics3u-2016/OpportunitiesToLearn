@@ -97,13 +97,32 @@ NOTE: This is a one-time setup step.
 
 ### How to update from the class master repository
 
-* From the Source Control menu item, choose Pull:
+* Open a Terminal window.
 
-![Pull](http://russellgordon.ca/rsgc/2016-17/ics3u/pull.png)
+![Opening a Terminal window](http://russellgordon.ca/rsgc/2016-17/ics3u/terminal.png)
 
-* In the **Pull remote changes** sheet that appears, choose the new remote you set up:
+* In Finder, locate the folder that contains your fork of the *OpportunitiesToLearn* repository.
 
-![New repo](http://russellgordon.ca/rsgc/2016-17/ics3u/new-repo.png)
+![Finding your repository](http://russellgordon.ca/rsgc/2016-17/ics3u/find-repo.png)
 
-(to be continued)
+* In the Terminal window, type **cd** then drag and drop your repository folder to the Terminal window, then press the *Enter* key:
+
+![Drag and drop](http://russellgordon.ca/rsgc/2016-17/ics3u/drag-and-drop.png)
+
+![Switch to repo folder](http://russellgordon.ca/rsgc/2016-17/ics3u/switch-to-repo.png)
+
+* Get the changes from the master repository with the command **git fetch teacher-upstream** :
+
+![Get upstream changes](http://russellgordon.ca/rsgc/2016-17/ics3u/fetch-upstream.png)
+
+* Check out your fork's `master` branch with the command `git checkout master` :
+
+![Check out your master branch](http://russellgordon.ca/rsgc/2016-17/ics3u/git-checkout-master.png)
+
+* Merge the changes from `teacher-upstream/master` into your local `master` branch. This brings your fork's `master` branch into sync with the `teacher-upstream` repository, without losing your local changes. Use the command `git reset --hard teacher-upstream/master` :
+
+![Reset](http://russellgordon.ca/rsgc/2016-17/ics3u/git-reset.png)
+
+
+
 
