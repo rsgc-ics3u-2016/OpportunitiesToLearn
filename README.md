@@ -67,37 +67,33 @@ Instructions on how to perform all of these operations are described below.
 
 ### How to make a pointer to the remote master repository
 
-* Begin on the Source Control menu item, and follow the sequence shown to configure your project.
+NOTE: This is a one-time setup step.
 
-![Configure your repository](http://russellgordon.ca/rsgc/2016-17/ics3u/configure-remote.png)
+* Open a Terminal window.
 
-* Click the **Remotes** option:
+![Opening a Terminal window](http://russellgordon.ca/rsgc/2016-17/ics3u/terminal.png)
 
-![Remotes](http://russellgordon.ca/rsgc/2016-17/ics3u/remotes.png)
+* In Finder, locate the folder that contains your fork of the *OpportunitiesToLearn* repository.
 
-* Click the + sign then choose **Add remotes** option:
+![Finding your repository](http://russellgordon.ca/rsgc/2016-17/ics3u/find-repo.png)
 
-![Add remotes](http://russellgordon.ca/rsgc/2016-17/ics3u/add-remote.png)
+* In the Terminal window, type **cd** then drag and drop your repository folder to the Terminal window, then press the *Enter* key:
 
-* In the **Name** field type *class-master-repository* and in the **Address** field, paste the address for the master repository (this is the repository you originally forked from):
+![Drag and drop](http://russellgordon.ca/rsgc/2016-17/ics3u/drag-and-drop.png)
 
-Name: class-master-repository
+![Switch to repo folder](http://russellgordon.ca/rsgc/2016-17/ics3u/switch-to-repo.png)
 
-Address: https://github.com/rsgc-ics3u-2016/OpportunitiesToLearn.git
+* List the current configured remote repository for your fork by typing **git remote -v**:
 
-![Adding remote options](http://russellgordon.ca/rsgc/2016-17/ics3u/remote-options.png)
+![List remotes](http://russellgordon.ca/rsgc/2016-17/ics3u/list-repos.png)
 
-* Then press the **Add Remote** button.
+* Specify the new remote upstream repository that will be synced with the fork, with the command **git remote add teacher-upstream https://github.com/rsgc-ics3u-2016/OpportunitiesToLearn.git**
 
-* You need to commit the changes (the addition of a new remote is a change).
+![Set upstream repo](http://russellgordon.ca/rsgc/2016-17/ics3u/set-upstream.png)
 
-* Choose Source Control, then Commit:
+* Check that the new remote was added with command **git remote -v** again:
 
-![Commit](http://russellgordon.ca/rsgc/2016-17/ics3u/commit.png)
-
-* In the commit sheet, make sure the checkbox beside the file is enabled, add a commit comment, be sure the checkbox beside **Push to remote** is enabled, then press the **Commit 1 File and Push** button:
-
-![Commit sheet](http://russellgordon.ca/rsgc/2016-17/ics3u/commit-sheet.png)
+![Verify new upstream](http://russellgordon.ca/rsgc/2016-17/ics3u/verify-new-upstream.png)
 
 ### How to update from the class master repository
 
